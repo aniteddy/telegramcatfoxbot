@@ -44,12 +44,5 @@ def handle_text(message):
 
     bot.send_photo(message.chat.id, answer)
 
-    #num = int(message.text)
-    #source = get(f"https://aws.random.cat/view/{num}").text
-    #if "id=\"cat" in source:
-    #    bot.send_photo(message.chat.id, source.split("src=\"")[1].split("\"")[0])
-    #else:
-     #   print("Incorrect id")
-
 # Запускаем бота
 bot.polling(none_stop=True, interval=1)
